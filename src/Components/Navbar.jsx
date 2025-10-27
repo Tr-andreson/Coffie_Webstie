@@ -1,14 +1,13 @@
-import React from 'react'
-import "./navbar.css"
+// import "./navbar.css"
 import { NavLink } from 'react-router-dom'
 
 export const Navbar = () => {
   return (
-    <div className='Navbar'>
-      <div className="NavImage">
-        <img src="https://image.similarpng.com/very-thumbnail/2020/11/Coffee-logo-design-on-transparent-background-PNG.png" alt="" />
+    <div className='bg-black flex items-center justify-between'>
+      <div className="">
+        <img src={"./Logo.png"} />
       </div>
-      <div className="NavItems">
+      <div className="text-red-400">
         <ul>
           <a href=""><NavLink to="/">Home</NavLink></a>
           <a href=""><NavLink to="/about">About</NavLink></a>
