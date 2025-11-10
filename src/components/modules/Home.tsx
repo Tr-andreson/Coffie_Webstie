@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Card } from "../card";
 
 const HomeModule = () => {
   useEffect(() => {
@@ -23,57 +24,72 @@ const HomeModule = () => {
       </div>
 
       <div
-        className="container mx-auto h-[50vh] mt-[100px]"
+        className="container mx-auto h-[60vh] mt-[100px]"
         data-aos="fade-up"
       >
-        <h4>LOGO MODULE</h4>
+
+        <h4 className="text-center text-4xl my-4">Logo Module</h4>
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
-          <img
-            src="./Coffie1.png"
-            alt="Coffee"
+          <Card
+            paragraph="This is the testing paragraph"
+            name="Lungo Coffie"
+            imageUrl={"./Coffie1.png"}
+            price={200}
+          />
+          <Card
+            paragraph="This is the testing paragraph"
+            name="Lungo Coffie"
+            imageUrl={"./Coffie2.png"}
+            price={200}
           />
 
-          <img
-            src="./Coffie2.png"
-            alt="Coffee"
+          <Card
+            paragraph="This is the testing paragraph"
+            name="Lungo Coffie"
+            imageUrl={"./Coffie3.png"}
+            price={200}
           />
 
-          <img
-            src="./Coffie3.png"
-            alt="Coffee"
-          />
-
-          <img
-            src="./Coffie4.png"
-            alt="Coffee"
+          <Card
+            paragraph="This is the testing paragraph"
+            name="Lungo Coffie"
+            imageUrl={"./Coffie4.png"}
+            price={200}
           />
         </div>
       </div>
 
       <div
         data-aos="fade-up"
-        className="container mx-auto h-[50vh]">
-        <h4>Our Special Coffee</h4>
+        className="container mx-auto h-[60vh]" >
+        <h4 className="text-center text-4xl my-4">Our Special Coffee</h4>
 
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-4">
-          <img
-            src="./Coffie5.png"
-            alt="Coffee"
+          <Card
+            paragraph="This is the testing paragraph"
+            name="Lungo Coffie"
+            imageUrl={"./Coffie5.png"}
+            price={200}
+          />
+          <Card
+            paragraph="This is the testing paragraph"
+            name="Lungo Coffie"
+            imageUrl={"./Coffie6.png"}
+            price={200}
           />
 
-          <img
-            src="./Coffie6.png"
-            alt="Coffee"
+          <Card
+            paragraph="This is the testing paragraph"
+            name="Lungo Coffie"
+            imageUrl={"./Coffie7.png"}
+            price={200}
           />
 
-          <img
-            src="./Coffie7.png"
-            alt="Coffee"
-          />
-
-          <img
-            src="./Coffie8.png"
-            alt="Coffee"
+          <Card
+            paragraph="This is the testing paragraph"
+            name="Lungo Coffie"
+            imageUrl={"./Coffie8.png"}
+            price={200}
           />
 
         </div>
