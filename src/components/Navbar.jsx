@@ -1,12 +1,11 @@
 // import "./navbar.css"
 import { NavLink } from 'react-router-dom'
+import { Logo } from './Logo'
 
 export const Navbar = () => {
   return (
     <div className='bg-black flex items-center justify-between'>
-      <div className="">
-        <img src={"./Logo.png"} />
-      </div>
+      <Logo />
       <div className="text-red-400">
         <ul>
           <a href=""><NavLink to="/">Home</NavLink></a>

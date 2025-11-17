@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Card } from "../card";
+import { Logo } from "../reuse/logo";
+import Footer from "../Footer";
 
 const HomeModule = () => {
   useEffect(() => {
@@ -24,7 +26,7 @@ const HomeModule = () => {
       </div>
 
       <div
-        className="container mx-auto h-[60vh] mt-[100px]"
+        className="container mx-auto mt-[100px]"
         data-aos="fade-up"
       >
 
@@ -61,7 +63,7 @@ const HomeModule = () => {
 
       <div
         data-aos="fade-up"
-        className="container mx-auto h-[60vh]" >
+        className="container mx-auto" >
         <h4 className="text-center text-4xl my-4">Our Special Coffee</h4>
 
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-4">
@@ -91,7 +93,6 @@ const HomeModule = () => {
             imageUrl={"./Coffie8.png"}
             price={200}
           />
-
         </div>
       </div>
 
@@ -112,7 +113,7 @@ const HomeModule = () => {
       </div>
 
       <div>
-        <h4>Footer</h4>
+        <Footer />
       </div>
     </div>
   );
